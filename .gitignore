@@ -25,3 +25,6 @@ dist-ssr
 .env
 /UI/cyber_ui/node_modules
 /backend/venv
+/backend/lib
+/backend/__pycache__
+/backend/lambda_function.zip

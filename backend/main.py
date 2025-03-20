@@ -8,14 +8,15 @@ from Crypto.Cipher import AES,PKCS1_OAEP
 from Crypto.PublicKey import RSA
 from Crypto.Random import get_random_bytes
 from fastapi.middleware.cors import CORSMiddleware
-
+from mangum import Mangum
 
 app = FastAPI()
-
+handler = Mangum(app)
 
 origins = [
-    "http://localhost:3000",
-    "localhost:3000"
+    # "http://localhost:3000",
+    # "localhost:3000"
+    "https://main.d1b2o0cddgc995.amplifyapp.com/"
 ]
 
 
